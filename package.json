@@ -1,0 +1,13 @@
+{
+  "name": "media-player-flutter-info",
+  "version": "1.0.0",
+  "description": "Aplicativo Flutter - Informações do Projeto",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "info": "node index.js"
+  },
+  "keywords": ["flutter", "android", "media-player"],
+  "author": "",
+  "license": "ISC"
+}
