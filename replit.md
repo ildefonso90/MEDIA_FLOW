@@ -153,7 +153,9 @@ flutter pub run build_runner build
 ## 🎨 Interface
 
 O app possui:
-- Design Material 3
+- Design Material 3 com paleta vermelha estilo Spotify
+- Tema escuro: fundo preto (#121212) igual ao Spotify
+- Ícones e controles em vermelho (#E53935) em vez de verde
 - Suporte a tema claro e escuro
 - Animações fluidas
 - Interface responsiva

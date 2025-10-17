@@ -16,8 +16,14 @@ Aplicativo Flutter completo para reprodução de áudio e vídeo com biblioteca 
 - ✅ Criação e gestão de playlists personalizadas
 - ✅ Mini player flutuante persistente
 - ✅ Controles por gestos (swipe horizontal/vertical)
-- ✅ Tema claro/escuro
+- ✅ Tema claro/escuro com paleta vermelha estilo Spotify
 - ✅ Suporte completo a Android 13+ (permissões granulares)
+
+### 🎨 Design Visual
+- **Paleta de cores**: Vermelho vibrante (#E53935) - estilo Spotify
+- **Tema escuro**: Fundo preto (#121212) similar ao Spotify
+- **Ícones e controles**: Todos em vermelho em vez de verde
+- **Interface moderna**: Material Design 3 com animações fluidas
 
 ### Controles por Gestos
 - **Swipe horizontal** no player ou mini player: trocar de faixa

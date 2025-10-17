@@ -33,7 +33,7 @@ class ThemeProvider extends ChangeNotifier {
     useMaterial3: true,
     brightness: Brightness.light,
     colorScheme: ColorScheme.fromSeed(
-      seedColor: Colors.deepPurple,
+      seedColor: const Color(0xFFE53935),
       brightness: Brightness.light,
     ),
     appBarTheme: const AppBarTheme(
@@ -50,6 +50,8 @@ class ThemeProvider extends ChangeNotifier {
       trackHeight: 3,
       thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 6),
       overlayShape: const RoundSliderOverlayShape(overlayRadius: 14),
+      activeTrackColor: const Color(0xFFE53935),
+      thumbColor: const Color(0xFFE53935),
     ),
   );
 
@@ -57,15 +59,18 @@ class ThemeProvider extends ChangeNotifier {
     useMaterial3: true,
     brightness: Brightness.dark,
     colorScheme: ColorScheme.fromSeed(
-      seedColor: Colors.deepPurple,
+      seedColor: const Color(0xFFE53935),
       brightness: Brightness.dark,
     ),
+    scaffoldBackgroundColor: const Color(0xFF121212),
     appBarTheme: const AppBarTheme(
       centerTitle: true,
       elevation: 0,
+      backgroundColor: Color(0xFF121212),
     ),
     cardTheme: CardTheme(
       elevation: 2,
+      color: const Color(0xFF1E1E1E),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
       ),
@@ -74,6 +79,8 @@ class ThemeProvider extends ChangeNotifier {
       trackHeight: 3,
       thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 6),
       overlayShape: const RoundSliderOverlayShape(overlayRadius: 14),
+      activeTrackColor: const Color(0xFFE53935),
+      thumbColor: const Color(0xFFE53935),
     ),
   );
 }
