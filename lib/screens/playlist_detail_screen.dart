@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import '../models/playlist.dart';
 import '../providers/media_provider.dart';
 import '../widgets/media_list_item.dart';
+import '../models/media_file.dart';
 
 class PlaylistDetailScreen extends StatelessWidget {
   final Playlist playlist;
@@ -32,7 +33,7 @@ class PlaylistDetailScreen extends StatelessWidget {
                   Icon(
                     Icons.music_note,
                     size: 64,
-                    color: Theme.of(context).colorScheme.primary.withOpacity(0.5),
+                    color: Theme.of(context).colorScheme.primary.withAlpha(128),
                   ),
                   const SizedBox(height: 16),
                   const Text('Playlist vazia'),

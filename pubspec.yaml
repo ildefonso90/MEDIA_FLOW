@@ -1,5 +1,6 @@
 name: media_player_app
 description: Aplicativo completo de reprodução de áudio e vídeo com biblioteca local
+# homepage: Gemini
 publish_to: 'none'
 version: 1.0.0+1
 

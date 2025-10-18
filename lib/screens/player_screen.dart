@@ -82,8 +82,8 @@ class _PlayerScreenState extends State<PlayerScreen> {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Theme.of(context).colorScheme.primary.withOpacity(0.3),
-            Theme.of(context).colorScheme.background,
+            Theme.of(context).colorScheme.primary.withAlpha(77),
+            Theme.of(context).colorScheme.surface,
           ],
         ),
       ),
@@ -98,7 +98,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                 borderRadius: BorderRadius.circular(20),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.3),
+                    color: Colors.black.withAlpha(77),
                     blurRadius: 20,
                     spreadRadius: 5,
                   ),
@@ -139,7 +139,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                   Text(
                     media.displayArtist,
                     style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                          color: Theme.of(context).colorScheme.onBackground.withOpacity(0.7),
+                          color: Theme.of(context).colorScheme.onSurface.withAlpha(179),
                         ),
                     textAlign: TextAlign.center,
                   ),
@@ -147,7 +147,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                   Text(
                     media.displayAlbum,
                     style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                          color: Theme.of(context).colorScheme.onBackground.withOpacity(0.5),
+                          color: Theme.of(context).colorScheme.onSurface.withAlpha(128),
                         ),
                     textAlign: TextAlign.center,
                   ),
@@ -167,10 +167,10 @@ class _PlayerScreenState extends State<PlayerScreen> {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Colors.black.withOpacity(0.7),
+            Colors.black.withAlpha(179),
             Colors.transparent,
             Colors.transparent,
-            Colors.black.withOpacity(0.9),
+            Colors.black.withAlpha(230),
           ],
         ),
       ),
@@ -334,6 +334,6 @@ class _PlayerScreenState extends State<PlayerScreen> {
     if (hours > 0) {
       return '$hours:${twoDigits(minutes)}:${twoDigits(seconds)}';
     }
-    return '${minutes}:${twoDigits(seconds)}';
+    return '${twoDigits(minutes)}:${twoDigits(seconds)}';
   }
 }

@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../models/media_file.dart';
 import '../providers/media_provider.dart';
 import '../screens/player_screen.dart';
 
@@ -33,10 +34,10 @@ class MiniPlayer extends StatelessWidget {
       child: Container(
         height: 70,
         decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.surfaceVariant,
+          color: Theme.of(context).colorScheme.surfaceContainerHighest,
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.2),
+              color: Colors.black.withAlpha(51),
               blurRadius: 8,
               offset: const Offset(0, -2),
             ),

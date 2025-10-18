@@ -13,7 +13,6 @@ class AudioPlayerService {
   List<MediaFile> _playlist = [];
   int _currentIndex = 0;
   bool _shuffleEnabled = false;
-  RepeatMode _repeatMode = RepeatMode.off;
 
   AudioPlayer get audioPlayer => _audioPlayer;
   List<MediaFile> get playlist => _playlist;
@@ -119,8 +118,6 @@ class AudioPlayerService {
   }
 
   void setRepeatMode(RepeatMode mode) {
-    _repeatMode = mode;
-    
     switch (mode) {
       case RepeatMode.off:
         _audioPlayer.setLoopMode(LoopMode.off);

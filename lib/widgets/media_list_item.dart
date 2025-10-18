@@ -100,7 +100,7 @@ class MediaListItem extends StatelessWidget {
       decoration: BoxDecoration(
         color: isCurrentlyPlaying
             ? Theme.of(context).colorScheme.primaryContainer
-            : Theme.of(context).colorScheme.surfaceVariant,
+            : Theme.of(context).colorScheme.surfaceContainerHighest,
         borderRadius: BorderRadius.circular(8),
       ),
       child: Icon(

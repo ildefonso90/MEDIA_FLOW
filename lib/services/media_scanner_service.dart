@@ -23,7 +23,7 @@ class MediaScannerService {
     _onFound = onFound;
 
     try {
-      await MetadataGod.initialize();
+      MetadataGod.initialize();
       
       final List<MediaFile> foundMedia = [];
       final box = Hive.box<MediaFile>(AppConstants.hiveBoxMedia);
@@ -105,7 +105,7 @@ class MediaScannerService {
             }
           }
           
-          directories.add(Directory('$storagePath'));
+          directories.add(Directory(storagePath));
         }
       } else {
         final appDir = await getApplicationDocumentsDirectory();
@@ -158,7 +158,7 @@ class MediaScannerService {
         artist = metadata.artist;
         album = metadata.album;
         year = metadata.year;
-        duration = metadata.durationMs;
+        duration = metadata.durationMs?.round();
         trackNumber = metadata.trackNumber;
         genre = metadata.genre;
         

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/media_provider.dart';
-import '../providers/theme_provider.dart';
 import 'library_screen.dart';
 import 'favorites_screen.dart';
 import 'playlists_screen.dart';

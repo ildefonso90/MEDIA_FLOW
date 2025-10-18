@@ -91,7 +91,7 @@ class LibraryScreen extends StatelessWidget {
                         Icon(
                           Icons.music_off,
                           size: 64,
-                          color: Theme.of(context).colorScheme.primary.withOpacity(0.5),
+                          color: Theme.of(context).colorScheme.primary.withAlpha(128),
                         ),
                         const SizedBox(height: 16),
                         const Text('Nenhum ficheiro encontrado'),

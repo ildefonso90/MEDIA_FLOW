@@ -40,18 +40,18 @@ class ThemeProvider extends ChangeNotifier {
       centerTitle: true,
       elevation: 0,
     ),
-    cardTheme: CardTheme(
+    cardTheme: CardThemeData(
       elevation: 2,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
       ),
     ),
-    sliderTheme: SliderThemeData(
+    sliderTheme: const SliderThemeData(
       trackHeight: 3,
-      thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 6),
-      overlayShape: const RoundSliderOverlayShape(overlayRadius: 14),
-      activeTrackColor: const Color(0xFFE53935),
-      thumbColor: const Color(0xFFE53935),
+      thumbShape: RoundSliderThumbShape(enabledThumbRadius: 6),
+      overlayShape: RoundSliderOverlayShape(overlayRadius: 14),
+      activeTrackColor: Color(0xFFE53935),
+      thumbColor: Color(0xFFE53935),
     ),
   );
 
@@ -68,19 +68,19 @@ class ThemeProvider extends ChangeNotifier {
       elevation: 0,
       backgroundColor: Color(0xFF121212),
     ),
-    cardTheme: CardTheme(
+    cardTheme: CardThemeData(
       elevation: 2,
       color: const Color(0xFF1E1E1E),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
       ),
     ),
-    sliderTheme: SliderThemeData(
+    sliderTheme: const SliderThemeData(
       trackHeight: 3,
-      thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 6),
-      overlayShape: const RoundSliderOverlayShape(overlayRadius: 14),
-      activeTrackColor: const Color(0xFFE53935),
-      thumbColor: const Color(0xFFE53935),
+      thumbShape: RoundSliderThumbShape(enabledThumbRadius: 6),
+      overlayShape: RoundSliderOverlayShape(overlayRadius: 14),
+      activeTrackColor: Color(0xFFE53935),
+      thumbColor: Color(0xFFE53935),
     ),
   );
 }
